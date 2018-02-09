@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Band Academy</title>
+        <link href="assets/stylesheets/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            var countDownDate2 = new Date("Feb 21, 2018 15:37:25").getTime();
+            
+            var x = setInterval(function() {
+            
+                var now = new Date().getTime();
+                
+                var distance2 = countDownDate2 - now;
+                
+                var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+                var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+                
+                document.getElementById("demo2").innerHTML = days2 + "d " + hours2 + "h "
+                + minutes2 + "m " + seconds2 + "s ";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </head>
+
+    <body>
+        <header class="primary-header container group">
+            <h1 class="logo">
+                <a href="home.html"><img src="assets/images/logo.png"></a>
+            </h1>
+            <h3 class="tagline">Let&#8217;s Rock!</h3>            
+            <nav class="nav primary-nav">
+                <ul>
+                    <li><a href="programs.html">Programs</a></li><!--
+                    --><li><a href="camps.html">Camps</a></li><!--
+                    --><li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="row-alt">
+            <div class="lead container">
+                <h1>Programs</h1>
+            </div>
+        </section>
+        <section class="row">
+            <div class="grid">
+                <section class="event">
+                    <div class="col-2-3">
+                        <h5>​Richmond Primary Program</h5>
+                        <p>We’re excited to be offering an after school music program at Richmond Primary School from term 1, 2018!</p>
+                    </div><!--
+                    --><aside class="col-1-3">
+                        <p class="timer" id="demo2"></p>
+                    </aside>
+                </section>
+            </div>
+        </section>
+        <section class="row-sec">
+            <div class="container">
+                <h1> </h1>
+            </div>
+        </section>
+        <footer class="primary-footer container group">
+                <small>Copyright &copy; 2018</small>
+                <nav class="nav">
+                    <a href="https://www.facebook.com/rockbandacademyhobart/" target="_blank" style="padding: 10px;"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+                    <a href="#" target="_blank" style="padding: 10px;"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>  
+                    <a href="#" target="_blank" style="padding: 10px;"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>            
+                    <a href="#" target="_blank" style="padding: 10px;"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                </nav>
+        </footer>
+    </body>
+</html>
+
+
